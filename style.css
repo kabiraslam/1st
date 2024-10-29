@@ -1,0 +1,189 @@
+body{
+    background-image: linear-gradient(white, white, white, rgb(207, 155, 35));
+}
+
+header img{
+    height: 100%;
+    width: auto;
+    max-height: 200px;
+    max-width: 350px;
+}
+header{
+   padding: 0%;
+}
+nav{
+    border-top: 0.3em solid rgb(59, 169, 181);
+    border-bottom: 0.3em solid rgb(59, 169, 181);
+    border-radius: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+nav ul{
+    
+    text-decoration: none;
+}   
+nav ul li{
+     
+    background-color: goldenrod;
+    padding: .50em;
+    margin: .25em;
+    list-style-type:none;
+    min-width: 12%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+figure{
+    text-align: center;
+
+}
+figure img{
+    max-width: 500px;
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+}
+
+main{
+    border-top: 0.3em solid rgb(59, 169, 181);
+    border-bottom: 0.3em solid rgb(59, 169, 181);
+
+    border-radius: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+main table tr{
+    text-align: center;
+    align-items: center;
+    border: 1;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+div.colum {
+    float: left;
+
+}
+div .cleft{
+    float: left;
+    width:20%;
+    border-right: 1px solid black;
+    padding: 10px;
+
+}
+div .ccenter{
+    
+    width: 35%;
+    padding: 10px;
+    float: right;
+
+}
+
+div .cright{
+    float: right;
+    width: 30%;
+    border-left: 1px solid black;
+    padding: 10px;
+ 
+
+}
+.mytab table{
+    height: 400px;
+    border: 0.2em solid orange;
+    width: 100%;
+    border-radius: 1em;
+    text-align: center;
+   
+}
+.mytab caption {
+    border: 0.2em solid rgb(59, 169, 181);
+    background-color: rgb(59, 169, 181);
+    border-radius: 1em;
+}
+
+
+
+
+footer{
+    text-align: center;
+    border-top: 0.3em solid rgb(59, 169, 181);
+    border-bottom: 0.3em solid rgb(59, 169, 181);
+    border-radius: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+/* Begin mobile portion coding*/
+@media screen and (max-width: 640px){
+
+    nav ul li{
+        border-radius: 1em;
+        padding-right: 1em;
+        text-align: center;
+        margin-left: -2em;
+        
+    }   
+    .mobile{
+        display: none;
+    }
+    .cleft{
+        display: none;
+    }
+    .cright{
+        display: none;
+    }
+    main .ccenter{
+        width: 100%;
+       
+    }
+   
+
+   
+}
+/*Begin coding for tablet*/
+@media screen and (min-width: 641px){
+
+    nav ul li{
+        border-radius: 1em;
+        display: inline-block;
+        
+    }
+    
+    
+   
+}
+/*Begin coding for desktop*/
+@media screen and (min-width: 961px){
+    header{
+        text-align: left;
+    }
+    header img{
+       /* width: auto;*/
+        height: 5.5em;
+    }
+    nav{
+        float: right;
+        margin: -4.8em;
+        width: 60%;
+        margin-right: 0.4em;
+        background-image: linear-gradient(to right,white,orange);
+        border-top: 0.1em solid rgb(186, 122, 25);
+        border-bottom: 0.1em solid rgb(186, 122, 25);
+        box-shadow: 5px 5px  rgb(186, 122, 25);
+        
+    }
+    nav ul li{
+        border-radius: 1em;
+        display: inline-block;
+    }   
+    
+    
+}
